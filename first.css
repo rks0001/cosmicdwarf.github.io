@@ -3,10 +3,11 @@ h1{
 	text-align: center;
 	font-size: 500%;
 	color: #FFFFFF;
-	background-image: url("download.jpg");
 	background-size: 100%;
-	padding: 40px;
+	padding: 30px;
 	margin: 0;
+	padding-bottom: 80px;
+	background-image: linear-gradient(to bottom, rgba(2, 1, 13, 0), #18181b), url("download.jpg");
 }
 img{
 	border-radius: 50%;
