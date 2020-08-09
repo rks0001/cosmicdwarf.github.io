@@ -21,8 +21,8 @@ body{
 }
 section{
 	color: white;
-	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 30px;
 	background: linear-gradient(#18181b 20%, #000080 100%);
 	text-align: center;
 }
