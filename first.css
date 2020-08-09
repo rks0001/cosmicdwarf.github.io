@@ -28,6 +28,7 @@ section{
 }
 nav a{
 	width: 50%;
+	padding: 5px;
 }
 h2{
 	color: white;
