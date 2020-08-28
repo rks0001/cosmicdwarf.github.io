@@ -1,44 +1,130 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Ghritak Jyoti Kalita</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="mypage.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/b7101c3f11.js" crossorigin="anonymous"></script>
-</head>
-<body>
-	<nav>
-		<input type="checkbox" class="checkbtn" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
-		<label class="logo">ᑢᕲ</label>
-		<ul class="row d-flex justify-content-end">
-			<li class="col-12 col-lg-2"><a href="#">Home</a></li>
-			<li class="col-12 col-lg-2"><a href="#">About</a></li>
-			<li class="col-12 col-lg-3"><a href="#">Certifications</a></li>
-			<li class="col-12 col-lg-3"><a href="#">Contact us</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-		<div class="row" id="headrow">
-			<div class="col-12 col-lg-6">
-				<div class="d-flex justify-content-center">
-					<img id="myimg" src="img.jpg">
-				</div>
-			</div>
-			<div class="col-12 col-lg-6">
-				<div class="headtext">
-					<h1 class="text-white">Ghritak Jyoti Kalita</h1>
-					<h4 class="text-white">Electronics and Communication Engineering</h4>
-					<h2 class="text-white">SOE, Tezpur University</h2>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+body{
+	background-color: black;
+}
+ul{
+	float: right;
+	min-width:60%; 
+	font-size: 23px;
+	font-family: 'Dubai light';
+	font-weight: bold;
+	padding-top: 20px;
+	margin-right: 0;
+}
+label.logo{
+	font-size: 300%;
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	margin: auto;
+	padding-left: 30px;
+	padding-bottom: 4px;
+}
+nav{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+}
+a{
+	color: #ffffff;
+	transition: font-size .2s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 60px;
+	margin-right: 20px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+a:hover{
+	color: #007bff;
+	text-decoration: none;
+	font-size: 26px;
+}
+li{
+	list-style: none;
+    float: right;
+}
+#myimg{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+#headrow{
+	padding-top: 200px;
+}
+h1{
+	font-size: 40px;
+	font-family: Copperplate Gothic Light;
+}
+h2{
+	font-size: 28px;
+}
+
+
+/*----------------Responsive Design below-----------------*/
+
+
+@media screen and (max-width: 992px){
+	label.logo{
+		font-size: 30px;
+		padding-top: 8px;
+		padding-left: 20px;
+	}
+	nav ul li a{
+		font-size: 25px;
+	}
+	.checkbtn{
+		display: block;
+	}
+	nav{
+		z-index: 1;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		background: rgba(44, 62, 80, 0.9);
+		top: 60px;
+		left: 104%;
+		text-align: center;
+		transition: all .5s;
+		padding-bottom: 500px;
+	}
+	li{
+		list-style: none;
+		min-height: 67px;
+		max-width: 200px;
+	}
+	a:hover{
+	font-size: 29px;
+}
+	#check:checked ~ ul{
+		left: 3%;
+	}
+	#myimg{
+		width: 200px;
+		height: 200px;
+	}
+	h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	h4{
+		font-size: 20px;
+		text-align: center;
+	}
+	h2{
+		font-size: 23px;
+		text-align: center;
+	}
+	#headrow{
+		padding-top: 100px;
+	}
+	.headtext{
+		padding-top: 30px;
+	}
+}
