@@ -87,7 +87,7 @@ h2{
 		background: rgba(44, 62, 80, 0.9);
 		top: 60px;
 		left: 104%;
-		float: left;
+		text-align: center;
 		transition: all .5s;
 	}
 	nav ul li{
@@ -98,7 +98,7 @@ h2{
 		max-height: 50px;
 	}
 	#check:checked ~ ul{
-		left: 50%;
+		left: 4%;
 	}
 	#myimg{
 		width: 200px;
