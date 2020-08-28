@@ -98,7 +98,7 @@ h2{
 		max-height: 50px;
 	}
 	#check:checked ~ ul{
-		left: 4%;
+		left: 3%;
 	}
 	#myimg{
 		width: 200px;
