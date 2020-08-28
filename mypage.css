@@ -1,0 +1,128 @@
+body{
+	background-color: black;
+}
+ul{
+	float: right;
+	min-width:60%; 
+	font-size: 23px;
+	font-family: 'Dubai light';
+	font-weight: bold;
+	padding-top: 20px;
+	margin-right: 0;
+}
+label.logo{
+	font-size: 300%;
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	margin: auto;
+	padding-left: 30px;
+	padding-bottom: 4px;
+}
+nav{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+}
+a{
+	color: #ffffff;
+	transition: font-size .2s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+a:hover{
+	color: #007bff;
+	text-decoration: none;
+	font-size: 26px;
+}
+li{
+	list-style: none;
+    float: right;
+}
+#myimg{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+#headrow{
+	padding-top: 200px;
+}
+h1{
+	font-size: 40px;
+	font-family: Copperplate Gothic Light;
+}
+h2{
+	font-size: 28px;
+}
+
+
+/*----------------Responsive Design below-----------------*/
+
+
+@media screen and (max-width: 992px){
+	label.logo{
+		font-size: 30px;
+		padding-top: 8px;
+	}
+	nav ul li a{
+		font-size: 25px;
+	}
+	.checkbtn{
+		display: block;
+	}
+	nav{
+		z-index: 1;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		background: rgba(44, 62, 80, 0.9);
+		top: 60px;
+		left: 104%;
+		text-align: center;
+		transition: all .5s;
+		padding-bottom: 500px;
+	}
+	li{
+		list-style: none;
+		padding-bottom: 30px;
+	}
+	#check:checked ~ ul{
+		left: 3%;
+	}
+	#myimg{
+		width: 200px;
+		height: 200px;
+	}
+	h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	h4{
+		font-size: 20px;
+		text-align: center;
+	}
+	h2{
+		font-size: 23px;
+		text-align: center;
+	}
+	#headrow{
+		padding-top: 100px;
+	}
+	.headtext{
+		padding-top: 30px;
+	}
+}
+
+
+/*           <div><img src="C:\Users\Ghritak\Desktop\img.jpg"></div>
