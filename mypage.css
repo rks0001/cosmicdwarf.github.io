@@ -132,6 +132,9 @@ address{
 		text-decoration: none;
 		color: #007bff;
 	}
+	#div1{
+		padding-top: 100px;
+	}
 	#check:checked ~ ul{
 		left: 1.5%;
 	}
