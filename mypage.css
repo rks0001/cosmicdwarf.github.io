@@ -125,9 +125,13 @@ address{
 		min-height: 67px;
 		max-width: 200px;
 	}
-	a:hover{
+	li:hover{
 	font-size: 27px;
-}
+	}
+	a:hover{
+		text-decoration: none;
+		color: #007bff;
+	}
 	#check:checked ~ ul{
 		left: 1.5%;
 	}
