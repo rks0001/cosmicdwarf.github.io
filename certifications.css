@@ -2,10 +2,12 @@ body{
 	background-color: black;
 }
 
-/*---------------Navigation Bar------------------*/
+/*-----------------Navigation Bar----------------*/
+
+
 ul{
 	float: right;
-	min-width:60%;
+	min-width:60%; 
 	font-size: 23px;
 	font-family: 'Dubai light';
 	font-weight: bold;
@@ -54,32 +56,77 @@ a:hover{
 	color: #007bff;
 }
 
+/*------------------Carousel-------------------*/
 
-/*-----------------Divs------------------*/
 
-
-#myimg{
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
+#carousel-control{
+	z-index: 0;
 }
-#div1{
+#carousel-slide{
 	padding-top: 150px;
 }
-h1{
-	font-size: 40px;
-	font-family: arial;
+.carousel-inner{
+	
 }
+#carousel{
+	padding-top: 150px;
+}
+#carouselExampleIndicators{
+	min-height: 500px;
+}
+#carousel-item{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#carousel-des{
+	padding-top: 130px;
+	background: linear-gradient(to right, black 20%, #000080 100%);
+}
+
+
+/*----------------Cer Area------------------*/
+
+#cerarea{
+	padding-top: 50px;
+}
+
 h2{
 	font-size: 28px;
 }
-#div2{
-	padding-top: 100px;
+
+/*---------------Glowing Border-----------------*/
+
+#cerbox{
+	padding: 30px;
 }
-#downloadbtn:hover{
-	background-color: #000080;
+#cerboximg{
+	border-radius: 5px;
+	box-shadow: 0px 0px 35px 20px #000080; 
+}
+#cerboximg:hover{
+	
+}
+#cerbox:hover{
+	transition: .5s;
+	padding: 20px;
 }
 
+/*---------------Cer Button-----------------*/
+
+#cerbtn{
+	position: absolute;
+	top: 70%;
+  	left: 37%;
+  	display: none;
+}
+#cerboximg:hover + #cerbtn{
+	transition: 1s;
+	display: block;
+}
+#cerbtn:hover{
+	background-color: #000080;
+	display: block;
+}
 
 /*-----------------Footer------------------*/
 
@@ -110,13 +157,12 @@ address{
 	font-family: OpenSans,Arial,sans-serif;
 }
 
-
 /*----------------Responsive Design below-----------------*/
 
 
 @media screen and (max-width: 992px){
 	
-/*---------------Nav Bar--------------*/
+/*------------------Nav Bar----------------*/
 
 	label.logo{
 		font-size: 30px;
@@ -149,7 +195,7 @@ address{
 		max-width: 200px;
 	}
 	li:hover{
-	font-size: 27px;
+		font-size: 27px;
 	}
 	a:hover{
 		text-decoration: none;
@@ -159,36 +205,19 @@ address{
 		left: 1.5%;
 	}
 
-/*-----------------Divs-----------------*/
+/*------------------Carousel----------------*/
 
-
-	#div1{
+	#carousel{
 		padding-top: 100px;
 	}
-	#myimg{
-		width: 200px;
-		height: 200px;
+	#carousel-des{
+		background: linear-gradient(to bottom, black 15%, #000080 100%);
 	}
-	h1{
-		font-size: 30px;
-		text-align: center;
-	}
-	h4{
-		font-size: 20px;
-		text-align: center;
-	}
-	h2{
-		font-size: 23px;
-		text-align: center;
-	}
-	p{
-		text-align: center;
-	}
-	#headtext{
-		padding-top: 30px;
+	.carousel-indicators{
+		display: none;
 	}
 
-/*------------------Footer--------------------*/
+/*---------------Footer----------------*/
 
 
 	#follow{
@@ -199,5 +228,19 @@ address{
 	}
 	#copyright{
 		padding-bottom: 20px;
+	}
+	h2{
+		font-size: 23px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	#carousel-des{
+		padding-top: 70px;
+	}
+}
+@media screen and (max-width: 768px){
+	#cerbtn{
+  		left: 40%;
 	}
 }
