@@ -1,2 +1,2 @@
 # cosmicdwarf.github.io
-This page is just for fun
+This is my official site, If there is any query feel free to ask :) 
